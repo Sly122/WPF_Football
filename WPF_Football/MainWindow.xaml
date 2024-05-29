@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_Football.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Football"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Foreground="#FF38B3A5">
+    <Grid>
+        <StackPanel Background="#FF00474C">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Background="White">
+                <Button Name="btnFixtures" Content="Fixtures" Click="BtnFixtures_Click" Margin="5"/>
+                <Button Name="btnPlayers" Content="Players" Click="BtnPlayers_Click" Margin="5"/>
+                <Button Name="btnTeams" Content="Teams" Click="BtnTeams_Click" Margin="5"/>
+                <Button Name="btnExit" Content="Exit" Click="BtnExit_Click" Margin="5"/>
+            </StackPanel>
+            <ContentControl Name="MainContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </StackPanel>
+    </Grid>
+
+</Window>

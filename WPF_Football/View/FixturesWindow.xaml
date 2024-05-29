@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="WPF_Football.View.FixturesUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Background="White">
+
+                <Button Name="btnAdd" Content="Add"  Margin="5" Click="btnAdd_Click" Background="#FF74FB08"/>
+                <Button Name="btnUpdate" Content="Update"  Margin="5" Click="btnUpdate_Click" Background="#FFF7CC03"/>
+                <Button Name="btnDelete" Content="Delete"  Margin="5" Click="btnDelete_Click" Background="#FFF10C0C"/>
+
+            </StackPanel>
+
+            <TextBox x:Name="hometeam" TextWrapping="Wrap" Text="HomeTeam" Width="120" Margin="5"/>
+            <TextBox x:Name="awayteam" TextWrapping="Wrap" Text="AwayTeam" Width="120" Margin="5"/>
+            <TextBox x:Name="result" TextWrapping="Wrap" Text="Result" Width="120" Margin="5" />
+            <TextBlock Text="Fixtures" FontSize="20" FontWeight="Bold" Width="85" Foreground="#FFEFE6E6"/>
+            <DataGrid x:Name="Fixtures_DataGrid" ItemsSource="{Binding}" Margin="160,49,190,170" Background="#FFB10E0E" MouseLeftButtonUp="Fixtures_DataGrid_MouseLeftButtonUp" />
+
+        </StackPanel>
+    </Grid>
+</UserControl>
